@@ -14,7 +14,7 @@ describe("Address Decoding", () => {
   it("Decoding a test address...", () => {
     const network = networks.mainnet
     const privateKey = "L3royRxpg1F4UVNieDfwaVuVGxoAd3Vp6eN7w3puap3vXU9JNa6P"
-    
+
     const wallet = network.fromWIF(privateKey)
     console.log("public address:", wallet.address)
 
@@ -29,6 +29,8 @@ describe("Network test", () => {
     network.insight().getStatus().then(result => {
       assert.isNotNull(result)
       console.log("network status:\n", result.info)
+    }).catch(reason => {
+      console.log(reason)
     })
   })
 })
