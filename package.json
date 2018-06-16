@@ -1,0 +1,47 @@
+{
+  "name": "siriusjs-wallet",
+  "version": "0.0.7",
+  "description": "A TypeScript toolkit for building sirius light wallets",
+  "main": "lib/index.js",
+  "types": "lib/index.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "test": "mocha lib/**/*_test.js"
+  },
+  "keywords": [],
+  "author": {
+    "name": "Sirius",
+    "email": "hello@getsirius.io",
+    "url": "https://getsirius.io"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/siriuscore/siriusjs-wallet.git"
+  },
+  "homepage": "https://github.com/siriuscore/siriusjs-wallet",
+  "bugs": {
+    "url": "https://github.com/siriuscore/siriusjs-wallet/issues"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "@types/chai": "^4.1.2",
+    "@types/mocha": "^2.2.48",
+    "@types/node": "^8.10.17",
+    "@types/bigi": "^1.4.1",
+    "chai": "^4.1.2",
+    "mocha": "^5.2.0",
+    "tslint": "^5.9.1",
+    "typescript": "^2.7.1"
+  },
+  "dependencies": {
+    "axios": "^0.17.1",
+    "bigi": "^1.4.0",
+    "bignumber.js": "4.1.0",
+    "bip39": "^2.5.0",
+    "buffer": "^5.1.0",
+    "coinselect": "^3.1.11",
+    "safe-buffer": "^5.1.1",
+    "siriusjs-lib": "^0.0.7",
+    "varuint-bitcoin": "^1.1.0"
+  }
+}
